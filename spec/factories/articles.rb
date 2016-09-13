@@ -1,8 +1,8 @@
 FactoryGirl.define do
   factory :article do
-    name "MyString"
-    price 1
-    description "MyString"
-    owner_id nil
+    name Faker::Name.name 
+    price Faker::Number.between(100, 110)
+    description Faker::Lorem.sentence
+    owner nil
   end
 end

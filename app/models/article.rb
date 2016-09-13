@@ -1,3 +1,3 @@
 class Article < ActiveRecord::Base
-  belongs_to :owner_id
+  belongs_to :owner
 end

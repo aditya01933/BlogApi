@@ -17,12 +17,12 @@ ActiveRecord::Schema.define(version: 20160913081223) do
     t.string   "name"
     t.integer  "price"
     t.string   "description"
-    t.integer  "owner_id_id"
+    t.integer  "owner_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end
 
-  add_index "articles", ["owner_id_id"], name: "index_articles_on_owner_id_id"
+  add_index "articles", ["owner_id"], name: "index_articles_on_owner_id"
 
   create_table "owners", force: :cascade do |t|
     t.string   "name"

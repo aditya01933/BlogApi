@@ -4,7 +4,7 @@ class CreateArticles < ActiveRecord::Migration
       t.string :name
       t.integer :price
       t.string :description
-      t.references :owner_id, index: true, foreign_key: true
+      t.references :owner, index: true, foreign_key: true
 
       t.timestamps null: false
     end

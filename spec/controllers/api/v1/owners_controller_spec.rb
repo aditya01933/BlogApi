@@ -15,7 +15,7 @@ module Api;module V1
         body = JSON.parse(response.body)
         expect(response.status).to eq 200
         expect(body["owner_name"]).to include(@owner.name)
-        expect(body["articles"].count).to > 0
+        expect(body["articles"].count).to be > 0
       end
     end
 
