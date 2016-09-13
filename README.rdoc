@@ -1,1 +1,3 @@
 1. To run all test cases use guard or rspec
+
+Note: Rspec is using "Faker gem" that can cause validation to fail during test, so in case of "Name already exist error" Please re run the test suite.
